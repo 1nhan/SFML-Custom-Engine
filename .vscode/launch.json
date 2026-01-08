@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0", // launch.json 파일 포맷 버전 (VS Code에서 고정적으로 사용)
+    "configurations": [
+        {
+            "name": "Run ArcadeEngine (Debug)", // 디버깅 구성 이름 (VS Code 디버그 패널에 표시됨)
+            "type": "cppvsdbg",                 // 디버거 타입: MSVC용 Visual Studio Debugger
+            "request": "launch",                // 실행 방식: 프로그램을 새로 실행해서 디버깅 시작
+            "program": "${workspaceFolder}/Build/ArcadeEngine", 
+            // 디버깅할 실행 파일 경로 (빌드된 ArcadeEngine 실행 파일)
+
+            "cwd": "${workspaceFolder}",        // 디버깅 시 현재 작업 디렉터리 (프로젝트 루트)
+            "console": "integratedTerminal",    // 출력 콘솔: VS Code 내부 터미널 사용
+            "preLaunchTask": "${defaultBuildTask}" 
+            // 디버깅 시작 전에 실행할 빌드 작업 (tasks.json에 정의된 기본 빌드 작업)
+        }
+    ]
+}
