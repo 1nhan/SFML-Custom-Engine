@@ -1,7 +1,7 @@
 #include "Managers/ResourceManager.h"
 #include "Utils/Log.h"
 
-sf::Texture*                   ResourceManager::FetchTexture    (std::string & filename)
+sf::Texture* ResourceManager::FetchTexture(const std::string & filename)
 {
     if(!texture_.contains(filename))
     {
@@ -14,11 +14,11 @@ sf::Texture*                   ResourceManager::FetchTexture    (std::string & f
     return &texture_.at(filename);
 }
 
-sf::SoundBuffer*               ResourceManager::FetchSound      (std::string & filename)
+sf::SoundBuffer* ResourceManager::FetchSound(const std::string & filename)
 {
     if(!sound_.contains(filename))
     {
-        if(!texture_[filename].loadFromFile("Content/Sounds/"+filename))
+        if(!sound_[filename].loadFromFile("Content/Sounds/"+filename))
         {
             LOG_INFO("Failed to load Sound : {}", filename);
             return nullptr;
@@ -27,7 +27,7 @@ sf::SoundBuffer*               ResourceManager::FetchSound      (std::string & f
     return &sound_.at(filename);
     
 }
-sf::Font*                      ResourceManager::FetchFont       (std::string & filename)
+sf::Font* ResourceManager::FetchFont(const std::string & filename)
 {
     if(!font_.contains(filename))
     {
@@ -40,13 +40,13 @@ sf::Font*                      ResourceManager::FetchFont       (std::string & f
     return &font_.at(filename);
 }
 
-std::optional<sf::Music>       ResourceManager::FetchMusic      (std::string & filename)
+std::optional<sf::Music> ResourceManager::FetchMusic(const std::string & filename)
 {
     sf::Music music;
     
     if(!music.openFromFile("Content/Musics/"+filename))
     {
-        LOG_INFO("Failed to load Music : {}", music);
+        LOG_INFO("Failed to load Music : {}", filename);
         return std::nullopt;
     }
     return music;

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/CMakeFiles/logs-populate"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/CMakeFiles/logs-populate.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/CMakeFiles/logs-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/auror/source/public/SFML-Custom-Engine/Build/_deps/logs-subbuild/logs-populate-prefix/src/logs-populate-stamp/logs-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"logs-populate"
+		],
+		"name" : "logs-populate"
+	}
+}
