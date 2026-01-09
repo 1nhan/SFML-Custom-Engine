@@ -18,7 +18,7 @@ namespace Mapping
     } 
 }
 
-std::optional<int>          Input::LogicalToHarware(GamepadButton button, int id)
+std::optional<int> Input::LogicalToHarware(GamepadButton button, int id)
 {
     const auto& mapping = Mapping::GetMapping(id);
     const int value     = mapping[(int)button];
@@ -26,7 +26,7 @@ std::optional<int>          Input::LogicalToHarware(GamepadButton button, int id
     return (value != -1)? std::optional(value) : std::nullopt;
 }
 
-std::optional<GamepadButton>Input::HarwareToLogical(int button, int id)
+std::optional<GamepadButton> Input::HardwareToLogical(int button, int id)
 {
     const auto& mapping = Mapping::GetMapping(id);
     

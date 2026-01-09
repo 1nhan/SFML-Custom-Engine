@@ -22,5 +22,5 @@ namespace Input
     using Binding = std::variant<Keyboard, Mouse,Gamepad, Axis>;
 
     std::optional<int> LogicalToHarware(GamepadButton button, int id);
-    std::optional<GamepadButton> HarwareToLogical(int button, int id);
-}
+    std::optional<GamepadButton> HardwareToLogical(int button, int id);
+};

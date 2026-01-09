@@ -6,7 +6,7 @@
 
 효과: 게임 로직(Scene)은 엔진 내부를 몰라도 Context만 통해 필요한 기능을 가져다 쓸 수 있어 개발 생산성이 극대화됩니다.
 
-### \Core
+## \Core
 
 ### [\Engine](Details/Engine.md)
 
@@ -23,6 +23,8 @@
 ### [\EngineConfig](Details/EngineConfig.md)
 
 역할: 해상도, 타이틀, 볼륨 같은 고정 설정값을 한곳에 모아둔 구조체입니다. 하드코딩을 방지합니다.
+
+---
 
 ## \Managers
 
@@ -63,6 +65,8 @@
 ### [\ClipboardManager](Details/ClipboardManager.md)
 : 복사/붙여넣기 기능을 지원합니다.
 
+---
+
 ## Game Logic
 Scene (Base Class)
 
@@ -78,6 +82,8 @@ Scene (Base Class)
 
 ### [\Overlay](Details/)
 : 게임 위에 겹쳐서 뜨는 '일시정지 메뉴' 같은 것입니다. 현재 씬을 방해하지 않고 작동합니다.
+
+---
 
 ## Utilities & Effects
 
